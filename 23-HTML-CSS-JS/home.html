@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: black;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="texto">Página principal</h1>
+    
+    <button id="botao">Clique em mim!</button>
+
+    <script>
+        var botao = document.getElementById("botao");
+        botao.onclick = function() {
+            alert("Botão clicado com sucesso!");
+
+            var texto = document.getElementById("texto");
+            texto.innerText = "Novo texto!";
+        }
+        
+    </script>
+
+</body>
+</html>
+
